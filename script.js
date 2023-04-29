@@ -21,6 +21,29 @@ minutesCounter = 5;
 secondsCounter = 0;
 running = true;
 
+// Mobile Menu
+let mobileMenuButton = document.querySelector("#mobile-menu-button");
+let mobileMenuLinksList = document.querySelector("#mobile-menu-links");
+
+let mobileMenuButtonStyle = mobileMenuButton.style.background;
+
+let mobileMenuHidden = true;
+
+mobileMenuButton.addEventListener("click", () => {
+  if (mobileMenuHidden) {
+    // mobileMenuButton.style.background =
+    //   "linear-gradient(to right, black, #502d0a, black)";
+
+    mobileMenuButton.style.color = "black";
+    mobileMenuLinksList.style.display = "block";
+    mobileMenuHidden = false;
+  } else {
+    mobileMenuButton.style.color = "white";
+    mobileMenuLinksList.style.display = "none";
+    mobileMenuHidden = true;
+  }
+});
+
 // Timer Counter
 function counter() {
   if (secondsCounter > 0 || minutesCounter > 0) {
