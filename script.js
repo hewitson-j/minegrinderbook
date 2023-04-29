@@ -1,23 +1,24 @@
-header = document.querySelector("#main-header");
-homeButton = document.getElementById("home-button");
-aboutButton = document.getElementById("author-button");
-buyButton = document.getElementById("buy-button");
-artButton = document.getElementById("art-button");
-navbar = document.getElementById("navbar");
-photo = document.getElementById("test");
-pHeaders = document.querySelectorAll(".headers");
-paragraphs = document.querySelectorAll(".paragraphs");
-body = document.querySelector("body");
-content = document.getElementById("content");
-images = document.querySelectorAll(".pictures");
+let header = document.querySelector("#main-header");
+let homeButton = document.getElementById("home-button");
+let aboutButton = document.getElementById("author-button");
+let buyButton = document.getElementById("buy-button");
+let artButton = document.getElementById("art-button");
+let navbar = document.getElementById("navbar");
+let photo = document.getElementById("test");
+let pHeaders = document.querySelectorAll(".headers");
+let paragraphs = document.querySelectorAll(".paragraphs");
+let body = document.querySelector("body");
+let content = document.getElementById("content");
+let images = document.querySelectorAll("figure");
+let animationSection = document.getElementById("animation-pause");
 
-stopButton = document.querySelector("#stop-button");
-minutes = document.getElementById("minutes");
-seconds = document.getElementById("seconds");
-timerLabel = document.getElementById("timer-label");
+let stopButton = document.querySelector("#stop-button");
+let minutes = document.getElementById("minutes");
+let seconds = document.getElementById("seconds");
+let timerLabel = document.getElementById("timer-label");
 
-minutesCounter = 5;
-secondsCounter = 0;
+minutesCounter = 0;
+secondsCounter = 01;
 running = true;
 
 // Timer Counter
@@ -134,6 +135,12 @@ function jumpscare() {
   }, 9000);
   setInterval(() => {
     buyButton.style.color = "black";
+    animationSection.style.display = "none";
+    // minutes.style.color = "black";
+    // seconds.style.color = "black";
+    // timerLabel.style.color = "black";
+    // stopButton.style.color = "black";
+    // stopButton.style.backgroundColor = "black";
   }, 10000);
   setInterval(() => {
     for (var i = 0; i < pHeaders.length; i++) {
