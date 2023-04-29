@@ -77,6 +77,31 @@ li {
     display: inline-block;
 }
 
+/* Mobile Menu Button */
+
+#mobile-menu-button {
+    display: none;
+    font-size: 22pt;
+    background: linear-gradient(to right, black, #63380c, black);
+    padding: 1rem;
+}
+
+.mobile-anchors {
+    text-decoration: none;
+    color: white;
+}
+
+#mobile-menu-links {
+    display: none;
+    font-size: 16pt;
+    background: linear-gradient(to right, black, #63380c, black);
+}
+
+#mobile-menu-links li {
+    display: block;
+    padding: .5rem;
+}
+
 /* Grinder Section */
 
 #animation-pause {
