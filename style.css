@@ -137,6 +137,27 @@ input[type='button']{
 	animation: flash linear 2s infinite;
 }
 
+/* Intro Section */
+
+#book-cover {
+    width: 15%;
+    float: left;
+    margin-left: 20%;
+    margin-right: 1rem;
+    padding: 0 1rem;
+}
+
+#book-cover:hover {
+    animation: blinker 2s linear infinite;
+}
+
+@media only screen and (max-width: 1100px) {
+    #book-cover {
+        float: none;
+        margin: 0;
+    }
+}
+
 /* Art Section */
 #art {
     margin: auto;
@@ -157,6 +178,34 @@ input[type='button']{
 
 #author-image {
     width: 30%;
+}
+
+/* Buy Book Section */
+
+#buy-book p {
+    text-align: center;
+}
+
+#buy-book p a {
+    color: white;
+}
+
+#buy-book p a:hover {
+    color: red;
+}
+
+#buy-book p button {
+    background: linear-gradient(to right, black, #63380c, #63380c, black);
+    padding: .5rem 3rem;
+    border: none;
+    font-family:'Patua One', "Times New Roman";
+    font-size: 16pt;
+    color: white;
+}
+
+#buy-book p button:hover {
+    background: linear-gradient(to right, black, #4c2b09, #4c2b09, black);
+    color: rgb(154, 154, 154);
 }
 
 /* Copyright and Legal Section */

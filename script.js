@@ -11,6 +11,7 @@ let body = document.querySelector("body");
 let content = document.getElementById("content");
 let images = document.querySelectorAll("figure");
 let animationSection = document.getElementById("animation-pause");
+let bookCover = document.querySelector("#book-cover");
 
 let stopButton = document.querySelector("#stop-button");
 let minutes = document.getElementById("minutes");
@@ -179,6 +180,7 @@ function jumpscare() {
     for (var i = 0; i < images.length; i++) {
       images[i].style.display = "none";
     }
+    bookCover.style.display = "none";
   }, 14000);
   setInterval(() => {
     content.style.display = "none";
