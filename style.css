@@ -5,7 +5,7 @@ body {
     background-color: black;
     -webkit-animation: fadein 1.5s;
     animation: fadein 1.5s;
-    font-family:'Patua One', cursive;
+    font-family:'Patua One', "Times New Roman";
     overflow-x: hidden;
 }
 
@@ -16,6 +16,7 @@ header {
 
 p {
     max-width: 800px;
+    width: 85%;
     text-align: center;
     align-items: center;
     margin: auto;
@@ -56,7 +57,7 @@ section {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16pt;
     font-family:'Patua One', cursive;
 }
 
@@ -95,7 +96,7 @@ input[type='button']{
 
 #test {
     display: none;
-    margin: 1rem;
+    margin: auto;
     width: 35%;
     height: 35%;
 	animation: flash linear 2s infinite;
