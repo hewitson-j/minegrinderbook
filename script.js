@@ -17,8 +17,8 @@ let minutes = document.getElementById("minutes");
 let seconds = document.getElementById("seconds");
 let timerLabel = document.getElementById("timer-label");
 
-minutesCounter = 0;
-secondsCounter = 01;
+minutesCounter = 5;
+secondsCounter = 0;
 running = true;
 
 // Timer Counter
