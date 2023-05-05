@@ -137,6 +137,13 @@ input[type='button']{
 	animation: flash linear 2s infinite;
 }
 
+@media only screen and (max-width: 900px) {
+    #test {
+        width: 70%;
+        height: 70%;
+    }
+}
+
 /* Intro Section */
 
 #book-cover {
@@ -155,6 +162,7 @@ input[type='button']{
     #book-cover {
         float: none;
         margin: 0;
+        width: 35%;
     }
 }
 
@@ -213,6 +221,7 @@ input[type='button']{
 #copyright-and-legal {
     text-align: center;
     margin: auto;
+    max-width: 70%;
 }
 
 hr {

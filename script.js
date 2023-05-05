@@ -25,6 +25,7 @@ running = true;
 // Mobile Menu
 let mobileMenuButton = document.querySelector("#mobile-menu-button");
 let mobileMenuLinksList = document.querySelector("#mobile-menu-links");
+let mobileMenu = document.querySelector("#mobile-menu");
 
 let mobileMenuButtonStyle = mobileMenuButton.style.background;
 
@@ -126,19 +127,24 @@ function jumpscare() {
 
   //Initial text change for main header
   header.textContent = "run.";
+  let mmbtc = mobileMenuButton.innerHTML;
 
   //Text Changes for anchor elements
   setInterval(() => {
     homeButton.textContent = "hide.";
+    mmbtc = "hide.";
   }, 1000);
   setInterval(() => {
     aboutButton.textContent = "panic.";
+    mmbtc += " panic.";
   }, 2000);
   setInterval(() => {
     artButton.textContent = "scream.";
+    mmbtc += " scream.";
   }, 3000);
   setInterval(() => {
     buyButton.textContent = "die.";
+    mmbtc += " die.";
   }, 4000);
 
   //Changes color for items to make them "disappear"
@@ -147,9 +153,11 @@ function jumpscare() {
   }, 5000);
   setInterval(() => {
     navbar.style.background = "black";
+    mobileMenu.backgroundColor = "black";
   }, 6000);
   setInterval(() => {
     homeButton.style.color = "black";
+    mmbtc.style.color = "black";
   }, 7000);
   setInterval(() => {
     aboutButton.style.color = "black";
